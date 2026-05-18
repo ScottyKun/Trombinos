@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+<img src={{enseignant.photo}} class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Nom: {{enseignant.nom}} {{enseignant.prenom}}</h5>
+<p class="card-text">Informations personnelles</p>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Email: {{enseignant.email}}</li>
+<li class="list-group-item">Telephone: {{enseignant.telephone}}</li>
+<li class="list-group-item">Bureau: {{enseignant.bureau}}</li>
+<li class="list-group-item">Laboratoire: {{enseignant.laboratoire}}</li>
+<li class="list-group-item">
+    <a href="{{enseignant.research}}" target="_blank">ResearchGate</a>
+</li>
+</ul>
+</div>
