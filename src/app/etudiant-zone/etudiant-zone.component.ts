@@ -12,7 +12,9 @@ export class EtudiantZoneComponent implements OnInit {
   etudiants: Etudiant[] = [];
 
   constructor(public etudiantService: EtudiantService) { 
-    this.etudiants = etudiantService.getEtudiants();
+    this.etudiantService.getEtudiants().subscribe(data=>{
+      this.etudiants=data
+    })
   }
 
 

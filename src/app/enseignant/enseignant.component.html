@@ -1,16 +1,29 @@
 <div class="card" style="width: 18rem;">
-<img src={{enseignant.photo}} class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">Nom: {{enseignant.nom}} {{enseignant.prenom}}</h5>
-<p class="card-text">Informations personnelles</p>
+  <img src="{{enseignant.photo}}" class="card-img-top" alt="Photo de {{enseignant.nom}}">
+  <div class="card-body">
+    <h5 class="card-title">Nom: {{enseignant.nom}} {{enseignant.prenom}}</h5>
+    <p class="card-text">Informations personnelles</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Email: {{enseignant.email}}</li>
+    <li class="list-group-item">Téléphone: {{enseignant.telephone}}</li>
+    <li class="list-group-item">Bureau: {{enseignant.bureau}}</li>
+    <li class="list-group-item">Laboratoire: {{enseignant.laboratoire}}</li>
+    <li class="list-group-item">
+      <a href="{{enseignant.research}}" target="_blank">ResearchGate</a>
+    </li>
+  </ul>
+  <div class="card-body d-flex gap-2">
+    <!-- Bouton Modifier -->
+    <button class="btn btn-warning btn-sm" (click)="onUpdate()">
+      ✏️ Modifier
+    </button>
+    
+    <!-- Bouton Supprimer -->
+    <button class="btn btn-danger btn-sm" (click)="onDelete()">
+      🗑️ Supprimer
+    </button>
+  </div>
 </div>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">Email: {{enseignant.email}}</li>
-<li class="list-group-item">Telephone: {{enseignant.telephone}}</li>
-<li class="list-group-item">Bureau: {{enseignant.bureau}}</li>
-<li class="list-group-item">Laboratoire: {{enseignant.laboratoire}}</li>
-<li class="list-group-item">
-    <a href="{{enseignant.research}}" target="_blank">ResearchGate</a>
-</li>
-</ul>
-</div>
+
+<router-outlet></router-outlet>

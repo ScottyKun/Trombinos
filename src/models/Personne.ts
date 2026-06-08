@@ -4,8 +4,10 @@ export class Personne{
     email!: string;
     telephone!: number;
     photo!: string;
+    id!: number;
 
-    constructor(nom: string, prenom: string, email: string, telephone: number, photo: string) {
+    constructor(id:number,nom: string, prenom: string, email: string, telephone: number, photo: string) {
+        this.id=id;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;

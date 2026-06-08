@@ -1,0 +1,58 @@
+<form #enseignantForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="nomEnseignant" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="nomEnseignant" 
+           [(ngModel)]="enseignant.nom" name="nom" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="prenomEnseignant" class="form-label">Prénom</label>
+    <input type="text" class="form-control" id="prenomEnseignant" 
+           [(ngModel)]="enseignant.prenom" name="prenom" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="emailEnseignant" class="form-label">Email</label>
+    <input type="email" class="form-control" id="emailEnseignant" 
+           [(ngModel)]="enseignant.email" name="email" required>
+  </div>
+  
+  <div class="mb-3">
+    <label for="telephoneEnseignant" class="form-label">Téléphone</label>
+    <input type="tel" class="form-control" id="telephoneEnseignant" 
+           [(ngModel)]="enseignant.telephone" name="telephone">
+  </div>
+  
+  <div class="mb-3">
+    <label for="bureauEnseignant" class="form-label">Bureau</label>
+    <input type="text" class="form-control" id="bureauEnseignant" 
+           [(ngModel)]="enseignant.bureau" name="bureau">
+  </div>
+  
+  <div class="mb-3">
+    <label for="laboratoireEnseignant" class="form-label">Laboratoire</label>
+    <input type="text" class="form-control" id="laboratoireEnseignant" 
+           [(ngModel)]="enseignant.laboratoire" name="laboratoire">
+  </div>
+  
+  <div class="mb-3">
+    <label for="researchgateEnseignant" class="form-label">Lien vers ResearchGate</label>
+    <input type="url" class="form-control" id="researchgateEnseignant" 
+           [(ngModel)]="enseignant.research" name="research">
+  </div>
+
+  <div class="d-flex gap-2">
+    <!-- Bouton submit qui change de texte selon le mode -->
+    <button type="submit" class="btn btn-primary" 
+            [disabled]="!enseignantForm.valid">
+      {{ isEditMode ? 'Modifier' : 'Ajouter' }}
+    </button>
+    
+    <!-- Bouton supprimer (visible seulement en mode édition) -->
+    <button *ngIf="isEditMode" type="button" class="btn btn-danger" 
+            (click)="delete()">
+      Supprimer
+    </button>
+    
+  </div>
+</form>

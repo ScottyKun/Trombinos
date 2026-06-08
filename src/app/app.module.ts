@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EtudiantZoneComponent } from './etudiant-zone/etudiant-zone.component';
@@ -12,6 +14,12 @@ import { EnseignantService } from 'src/services/enseignant-service.service';
 import { EtudiantService } from 'src/services/etudiant-service.service';
 import { PersonnelService } from 'src/services/personnel-service.service';
 import { EtudiantPipe } from './etudiant-pipe.pipe';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormEtudiantComponent } from './form-etudiant/form-etudiant.component';
+import { FormEnseignantComponent } from './form-enseignant/form-enseignant.component';
+import { FormPersonnelComponent } from './form-personnel/form-personnel.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +30,18 @@ import { EtudiantPipe } from './etudiant-pipe.pipe';
     EnseignantComponent,
     PersonnelZoneComponent,
     PersonnelComponent,
-    EtudiantPipe
+    EtudiantPipe,
+    NavComponent,
+    HomeComponent,
+    FormEtudiantComponent,
+    FormEnseignantComponent,
+    FormPersonnelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [
     EnseignantService,

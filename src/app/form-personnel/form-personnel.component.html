@@ -1,0 +1,31 @@
+<form #personnelForm="ngForm">
+  <div class="mb-3">
+    <label for="nomPersonnel" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="nomPersonnel" [(ngModel)]="personnel.nom" name="nom">
+  </div>
+  <div class="mb-3">
+    <label for="prenomPersonnel" class="form-label">Prénom</label>
+    <input type="text" class="form-control" id="prenomPersonnel" [(ngModel)]="personnel.prenom" name="prenom">
+  </div>
+  <div class="mb-3">
+    <label for="emailPersonnel" class="form-label">Email</label>
+    <input type="email" class="form-control" id="emailPersonnel" [(ngModel)]="personnel.email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="telephonePersonnel" class="form-label">Téléphone</label>
+    <input type="tel" class="form-control" id="telephonePersonnel" [(ngModel)]="personnel.telephone" name="telephone">
+  </div>
+  <div class="mb-3">
+    <label for="bureauPersonnel" class="form-label">Bureau</label>
+    <input type="text" class="form-control" id="bureauPersonnel" [(ngModel)]="personnel.bureau" name="bureau">
+  </div>
+  <div class="mb-3">
+    <label for="servicePersonnel" class="form-label">Service</label>
+    <input type="text" class="form-control" id="servicePersonnel" [(ngModel)]="personnel.service" name="service">
+  </div>
+  <div class="mb-3">
+    <label for="twitterPersonnel" class="form-label">Compte X (Twitter)</label>
+    <input type="text" class="form-control" id="twitterPersonnel" [(ngModel)]="personnel.compte_X" name="twitter">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="add()">Soumettre</button>
+</form>

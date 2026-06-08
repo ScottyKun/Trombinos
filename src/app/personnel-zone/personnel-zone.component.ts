@@ -14,7 +14,9 @@ export class PersonnelZoneComponent implements OnInit {
 
   constructor(public personnelService: PersonnelService) { 
 
-    this.personnels = this.personnelService.getPersonnels();
+    this.personnelService.getPersonnels().subscribe(data=>{
+      this.personnels=data
+    })
   
   }
 

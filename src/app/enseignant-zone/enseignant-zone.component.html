@@ -1,7 +1,10 @@
-<div class="container">
-    <p>Enseignants</p>
-    <div class="row ">
-        <app-enseignant *ngFor="let enseignant of enseignants" [enseignant]="enseignant"></app-enseignant>
-
+<div class="container"> 
+    <div class="row">
+        <app-enseignant 
+            *ngFor="let enseignant of enseignants" 
+            [enseignant]="enseignant"
+            (delete)="deleteEnseignant($event)"
+            (update)="updateEnseignant($event)">
+        </app-enseignant>
     </div>
 </div>

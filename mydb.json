@@ -1,0 +1,168 @@
+{
+  "enseignants": [
+    {
+      "id": 1,
+      "nom": "Martin",
+      "prenom": "Sophie",
+      "email": "sophie.martin@universite.fr",
+      "telephone": 612345678,
+      "photo": "./assets/enseignant.webp",
+      "bureau": "Bâtiment A - Bureau 201",
+      "laboratoire": "LIP6",
+      "research": "Intelligence Artificielle"
+    },
+    {
+      "id": 2,
+      "nom": "Dubois",
+      "prenom": "Thomas",
+      "email": "thomas.dubois@universite.fr",
+      "telephone": 623456789,
+      "photo": "./assets/enseignant.webp",
+      "bureau": "Bâtiment B - Bureau 105",
+      "laboratoire": "LIRMM",
+      "research": "Bases de données"
+    },
+    {
+      "id": 3,
+      "nom": "Laurent",
+      "prenom": "Claire",
+      "email": "claire.laurent@universite.fr",
+      "telephone": 634567890,
+      "photo": "./assets/enseignant.webp",
+      "bureau": "Bâtiment C - Bureau 312",
+      "laboratoire": "IRISA",
+      "research": "Réseaux neuronaux"
+    },
+    {
+      "id": 4,
+      "nom": "Bernard",
+      "prenom": "Nicolas",
+      "email": "nicolas.bernard@universite.fr",
+      "telephone": 645678901,
+      "photo": "./assets/enseignant.webp",
+      "bureau": "Bâtiment D - Bureau 408",
+      "laboratoire": "LAAS",
+      "research": "Robotique autonome"
+    },
+    {
+      "id": 5,
+      "nom": "Petit",
+      "prenom": "Julie",
+      "email": "julie.petit@universite.fr",
+      "telephone": 656789012,
+      "photo": "./assets/enseignant.webp",
+      "bureau": "Bâtiment E - Bureau 203",
+      "laboratoire": "INRIA",
+      "research": "Traitement du langage naturel"
+    }
+  ],
+  "etudiants": [
+    {
+      "id": 1,
+      "nom": "Lefebvre",
+      "prenom": "Emma",
+      "email": "emma.lefebvre@etu.universite.fr",
+      "telephone": 612345678,
+      "photo": "./assets/etudiant.webp",
+      "linkedin": "https://linkedin.com/in/emma-lefebvre",
+      "alumni": "Promotion 2024"
+    },
+    {
+      "id": 2,
+      "nom": "Moreau",
+      "prenom": "Lucas",
+      "email": "lucas.moreau@etu.universite.fr",
+      "telephone": 623456789,
+      "photo": "./assets/etudiant.webp",
+      "linkedin": "https://linkedin.com/in/lucas-moreau",
+      "alumni": "Promotion 2025"
+    },
+    {
+      "id": 3,
+      "nom": "Simon",
+      "prenom": "Chloé",
+      "email": "chloe.simon@etu.universite.fr",
+      "telephone": 634567890,
+      "photo": "./assets/etudiant.webp",
+      "linkedin": "https://linkedin.com/in/chloe-simon",
+      "alumni": "Promotion 2024"
+    },
+    {
+      "id": 4,
+      "nom": "Michel",
+      "prenom": "Hugo",
+      "email": "hugo.michel@etu.universite.fr",
+      "telephone": 645678901,
+      "photo": "./assets/etudiant.webp",
+      "linkedin": "https://linkedin.com/in/hugo-michel",
+      "alumni": "Promotion 2026"
+    },
+    {
+      "id": 5,
+      "nom": "Roux",
+      "prenom": "Manon",
+      "email": "manon.roux@etu.universite.fr",
+      "telephone": 656789012,
+      "photo": "./assets/etudiant.webp",
+      "linkedin": "https://linkedin.com/in/manon-roux",
+      "alumni": "Promotion 2025"
+    }
+  ],
+  "personnels": [
+    {
+      "id": 1,
+      "nom": "Rousseau",
+      "prenom": "Sylvie",
+      "email": "sylvie.rousseau@universite.fr",
+      "telephone": 612345678,
+      "photo": "./assets/personnel.webp",
+      "bureau": "Bâtiment Admin - Bureau 101",
+      "service": "Scolarité",
+      "compte_X": "@sylvie_rousseau"
+    },
+    {
+      "id": 2,
+      "nom": "Girard",
+      "prenom": "Philippe",
+      "email": "philippe.girard@universite.fr",
+      "telephone": 623456789,
+      "photo": "./assets/personnel.webp",
+      "bureau": "Bâtiment Admin - Bureau 205",
+      "service": "RH",
+      "compte_X": "@philippe_girard"
+    },
+    {
+      "id": 3,
+      "nom": "Leroy",
+      "prenom": "Céline",
+      "email": "celine.leroy@universite.fr",
+      "telephone": 634567890,
+      "photo": "./assets/personnel.webp",
+      "bureau": "Bâtiment Admin - Bureau 308",
+      "service": "Comptabilité",
+      "compte_X": "@celine_leroy"
+    },
+    {
+      "id": 4,
+      "nom": "Mercier",
+      "prenom": "David",
+      "email": "david.mercier@universite.fr",
+      "telephone": 645678901,
+      "photo": "./assets/personnel.webp",
+      "bureau": "Bâtiment Admin - Bureau 112",
+      "service": "Bibliothèque",
+      "compte_X": "@david_mercier"
+    },
+    {
+      "id": 5,
+      "nom": "Blanc",
+      "prenom": "Marion",
+      "email": "marion.blanc@universite.fr",
+      "telephone": 656789012,
+      "photo": "./assets/personnel.webp",
+      "bureau": "Bâtiment Admin - Bureau 407",
+      "service": "Communication",
+      "compte_X": "@marion_blanc"
+    }
+  ]
+}
